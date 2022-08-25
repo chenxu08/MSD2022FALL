@@ -23,15 +23,11 @@ int main(int argc, const char * argv[]) {
     change = change - 10* d_number;
     int n_number = change / 5;
     change = change - 5* n_number;
-    int p_number = change / 1;
-    change = change - 1* p_number;
+    int p_number = change;
     cout << "Quarters:"<< q_number << "\n";
     cout << "Dimes:" << d_number << "\n";
     cout << "Nickels:" << n_number << "\n";
     cout << "Pennies:" << p_number << "\n";
-    
-    
-    
     
     return 0;
 }
