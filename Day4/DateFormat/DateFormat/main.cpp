@@ -28,25 +28,27 @@ int main(int argc, const char * argv[]) {
     int day = stoi(day_string);
     
     // get year
-    string year_string;
-    for( int j = date.length()-4; j<=date.length()-1; j++ ){
-        year_string= year_string + date[j];
+    
+    int y=0;
+    int j;
+    for( j = date.length(); j>=0; j-- ){
+        if (date[j]=='/'){break;}
+        y=y+1;
         
     }
+    string year_string = date.substr(j+1,y);
+    
+    int year = stoi(year_string);
+    
     int c=0;
-    for (int k = 0; k < year_string.length(); k++ ){
-        if (year_string[k] == '/'){
-            c=1;
-            ; }
+    if (year<1000 || year > 9999){
+        c=1;
     }
-    int year;
-    if (c==0){
     
-        year = stoi(year_string);
         
-    }
     
-    // changge month fromat
+    
+    // changge month fromat and check month range
     string output_month;
     int a=0;
     if  (month == 1 ){ output_month = "January ";
@@ -62,12 +64,12 @@ int main(int argc, const char * argv[]) {
     }else if(month == 11){ output_month = "November ";
     }else if(month == 12){ output_month = "December ";
     }else {a=1;}
-    
+
+//    // check day range
     int b=0;
     if (day<1 || day>31){b=1;}
-//    int c=0;
-//    if (year>9999 || year < 1000){c=1;}
-    
+
+
     if (a==0 && b==0 && c==0){
         cout << output_month << " " << day << ", "<< year<< "\n";
     }else {cout << "Invalid date\n";}
