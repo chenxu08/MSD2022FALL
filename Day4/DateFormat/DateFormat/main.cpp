@@ -31,8 +31,20 @@ int main(int argc, const char * argv[]) {
     string year_string;
     for( int j = date.length()-4; j<=date.length()-1; j++ ){
         year_string= year_string + date[j];
+        
     }
-    int year = stoi(year_string);
+    int c=0;
+    for (int k = 0; k < year_string.length(); k++ ){
+        if (year_string[k] == '/'){
+            c=1;
+            ; }
+    }
+    int year;
+    if (c==0){
+    
+        year = stoi(year_string);
+        
+    }
     
     // changge month fromat
     string output_month;
@@ -53,8 +65,10 @@ int main(int argc, const char * argv[]) {
     
     int b=0;
     if (day<1 || day>31){b=1;}
+//    int c=0;
+//    if (year>9999 || year < 1000){c=1;}
     
-    if (a==0 && b==0){
+    if (a==0 && b==0 && c==0){
         cout << output_month << " " << day << ", "<< year<< "\n";
     }else {cout << "Invalid date\n";}
 
