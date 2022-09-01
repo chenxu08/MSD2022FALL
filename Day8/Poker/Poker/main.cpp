@@ -30,13 +30,15 @@ int main(int argc, const char * argv[]) {
     int r=0;
     int fh=0;
     int n =0;
-    while (n<=1000000){
+    int t=0;
+    while (t<=2000){
+    while (n<=2000){
     srand(int(time(0)));
     for(int i =0 ; i < 5 ; i++){
         int x= (rand() % 52) ;
         onehand.push_back(cards[x]);
     }
-    
+
     if (isStraight (onehand)){s=s+1;}
     if (isFlush (onehand)){f=f+1;}
     if (isStraightFlush (onehand)){sf=sf+1;}
@@ -44,12 +46,14 @@ int main(int argc, const char * argv[]) {
     if (isFullHouse (onehand)){fh=fh+1;}
         n=n+1;
     }
+        t=t+1;}
     
     cout << s <<"\n";
     cout << f <<"\n";
     cout << sf <<"\n";
     cout << r <<"\n";
     cout << fh <<"\n";
+
 
 
     
