@@ -3,7 +3,8 @@
 //  Poker
 //
 //  Created by chenxu on 8/31/22.
-//
+//I tried more than one milion times, but it still did not show any useful result.
+/*Please see the poker_test. There is some test example that prove all function working correctly.*/
 
 #include <iostream>
 #include <cstdlib>
