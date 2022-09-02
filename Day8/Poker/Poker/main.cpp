@@ -31,14 +31,21 @@ int main(int argc, const char * argv[]) {
     int r=0;
     int fh=0;
     int n =0;
-    int t=0;
-    while (t<=2000){
-    while (n<=2000){
-    srand(int(time(0)));
+    int times;
+    cout << "Enter the times you want to try: \n";
+    cin >> times;
+    cout << "Please wait \n";
+    srand(time(0));
+//    while (t<=2000){
+    while (n<=times){
+//    srand(int(time(0)));
+        onehand.clear();
     for(int i =0 ; i < 5 ; i++){
         int x= (rand() % 52) ;
+//        cout<< x << " ";
         onehand.push_back(cards[x]);
     }
+//        cout << endl;
 
     if (isStraight (onehand)){s=s+1;}
     if (isFlush (onehand)){f=f+1;}
@@ -47,13 +54,13 @@ int main(int argc, const char * argv[]) {
     if (isFullHouse (onehand)){fh=fh+1;}
         n=n+1;
     }
-        t=t+1;}
+//        t=t+1;}
     
-    cout << s <<"\n";
-    cout << f <<"\n";
-    cout << sf <<"\n";
-    cout << r <<"\n";
-    cout << fh <<"\n";
+    cout << "The Straight times are :"<< s <<" and the precent is: "<< s/1000000.0<<"\n";
+    cout << "The Flush times are :"<< f <<" and the precent is: "<< f/1000000.0<<"\n";
+    cout << "The StraightFlush times are :"<< sf <<" and the precent is: "<< sf/1000000.0<<"\n";
+    cout << "The RoyalFlush times are :"<< r <<" and the precent is: "<< r/1000000.0<<"\n";
+    cout << "The FullHouse times are :"<< fh <<" and the precent is: "<< fh/1000000.0<<"\n";
 
 
 
