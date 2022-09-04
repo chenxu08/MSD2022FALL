@@ -3,8 +3,11 @@
 //  Poker
 //
 //  Created by chenxu on 8/31/22.
-//I tried more than one milion times, but it still did not show any useful result.
-/*Please see the poker_test. There is some test example that prove all function working correctly.*/
+//The Straight times are :2952 and the precent is: 0.002952
+/*The Flush times are :3850 and the precent is: 0.00385
+The StraightFlush times are :10 and the precent is: 1e-05
+The RoyalFlush times are :2 and the precent is: 2e-06
+The FullHouse times are :2545 and the precent is: 0.002545 correctly.*/
 
 #include <iostream>
 #include <cstdlib>
@@ -31,13 +34,13 @@ int main(int argc, const char * argv[]) {
     int r=0;
     int fh=0;
     int n =0;
-    int times;
-    cout << "Enter the times you want to try: \n";
-    cin >> times;
-    cout << "Please wait \n";
+//    int times;
+//    cout << "Enter the times you want to try: \n";
+//    cin >> times;
+//    cout << "Please wait \n";
     srand(time(0));
 //    while (t<=2000){
-    while (n<=times){
+    while (n<=1000000){
 //    srand(int(time(0)));
         onehand.clear();
     for(int i =0 ; i < 5 ; i++){
