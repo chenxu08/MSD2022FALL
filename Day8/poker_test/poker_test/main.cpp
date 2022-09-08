@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
     card n = {13,"Spade"};
     card o = {14,"Spade"};
     vector<card> hand1= {a,b,c,d,e};
-    vector<card> hand2= {m,n,j,l,o};
+    vector<card> hand2= {h,a,d,e,f};
     vector<card> hand3= {m,n,h,l,o};
     vector<card> hand4= {a,d,e,f,h};
     vector<card> hand5= {m,o,k,n,l};
