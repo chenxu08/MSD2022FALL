@@ -21,7 +21,7 @@ public:
 void freevector (){
     delete [] data;
 }
-void growvector(int* data){
+void growvector(){
     int *temp = new int[2*capacity];
     for (int i=0; i < capacity; i++){
         temp[i]= data[i];
@@ -33,7 +33,15 @@ void growvector(int* data){
 }
 void pushback(int value){
     if (size==capacity){
-        growvector(data);
+//        int *temp = new int[2*capacity];
+//        for (int i=0; i < capacity; i++){
+//            temp[i]= data[i];
+//        }
+//        delete [] data;
+//        capacity *=2;
+//        data = temp;
+//        temp = nullptr;
+        growvector();
     }
     data[size]= value;
     size=size+1;
@@ -58,7 +66,9 @@ int main(int argc, const char * argv[]) {
     v.pushback(10);
     v.pushback(15);
     v.pushback(20);
-    
+    v.pushback(10);
+    v.pushback(15);
+    v.pushback(20);
     
     v.popback();
     cout<<v.get(2)<< endl;
