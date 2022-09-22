@@ -26,7 +26,7 @@ void growvector(){
     for (int i=0; i < capacity; i++){
         temp[i]= data[i];
     }
-    delete [] data;
+    freevector ();
     capacity *=2;
     data = temp;
     temp = nullptr;
