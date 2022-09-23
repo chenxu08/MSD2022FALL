@@ -28,15 +28,96 @@ public:
         cout << "Copy constructor called " << endl;
     }
     myvector & operator = (const myvector & v){
-        class myvector v2=v;
+        myvector v2=v;
         cout << "Assignment operator called " << endl;
         return *this;
     }
-    int& operator[] (int index){
-           return this->data[index];
+int& operator[] (int index){
+        return data[index];
+        }
+bool operator ==(myvector& v){
+        int count=0;
+        if (size==v.getsize()){
+            for (int i=0;i<=v.getsize();i++){
+                if (data[i]==v[i]){
+                    count=count+1;
+
+                }
+            }
         }
 
-    
+        if (count==getsize()+1){
+            return true;
+        }else{return false;}
+    }
+    bool operator !=(myvector& v){
+        
+        if (size!=v.getsize()){
+            return true;
+        }else {
+            for (int i=0;i<=v.getsize();i++){
+                if (data[i]!=v[i]){
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+    bool operator <(myvector& v){
+        if (size==v.getsize()){
+            for (int i=0;i<=v.getsize();i++){
+                if (data[i]<v[i]){
+                    return true;}
+                
+            }
+            return false;
+        }else {
+            cout << "error"<<endl;
+            return false;
+        }
+
+    }
+    bool operator >(myvector& v){
+        if (size==v.getsize()){
+            for (int i=0;i<=v.getsize();i++){
+                if (data[i]>v[i]){
+                    return true;}
+                
+            }
+            return false;
+        }else {
+            cout << "error"<<endl;
+            return false;
+        }
+    }
+    bool operator <=(myvector& v){
+        if (size==v.getsize()){
+            for (int i=0;i<=v.getsize();i++){
+                if (data[i]<=v[i]){
+                    return true;}
+                
+            }
+            return false;
+        }else {
+            cout << "error"<<endl;
+            return false;
+        }
+        
+    }
+    bool operator >=(myvector& v){
+        if (size==v.getsize()){
+            for (int i=0;i<=v.getsize();i++){
+                if (data[i]>=v[i]){
+                    return true;}
+                
+            }
+            return false;
+        }else {
+            cout << "error"<<endl;
+            return false;
+        }
+        
+    }
 void freevector (){
     delete [] data;
 }
@@ -45,7 +126,7 @@ void growvector(){
     for (int i=0; i < capacity; i++){
         temp[i]= data[i];
     }
-    freevector ();
+    delete[] data;
     capacity *=2;
     data = temp;
     temp = nullptr;
@@ -76,17 +157,31 @@ int getcapacity(){return capacity;}
 int main(int argc, const char * argv[]) {
     // insert code here...
     myvector v;
-    v.pushback(10);
+    v.pushback(9);
+    v.pushback(9);
+    v.pushback(4);
     v.pushback(15);
-    v.pushback(20);
-    v.pushback(10);
-    v.pushback(15);
-    v.pushback(20);
-    myvector v2(v);
-    myvector v3;
-    v3=v;
-    cout<<v[3];
-   
     
+    myvector v2;
+    v2.pushback(9);
+    v2.pushback(9);
+    v2.pushback(4);
+    v2.pushback(15);
+    
+    myvector v3;
+    v3.pushback(9);
+    v3.pushback(9);
+    v3.pushback(10);
+    v3.pushback(12);
+    myvector vtest(v);
+    myvector vtest2;
+    vtest2=v;
+    
+    cout << "if v==v2 then: "<<(v==v2)<<endl;
+    cout << "if v!=v3 then: "<<(v!=v3)<<endl;
+    cout << "if v<v3 then: "<<(v<v3)<<endl;
+    cout << "if v3>v then: "<<(v3>v)<<endl;
+    cout << "if v<=v3 then: "<<(v<=v3)<<endl;
+    cout << "if v3>=v then: "<<(v3>=v)<<endl;
     return 0;
 }
