@@ -1,0 +1,3 @@
+/Users/xuchen/myGithubRepo/SFMLSample/xcode/CMakeFiles/testSFML.dir
+/Users/xuchen/myGithubRepo/SFMLSample/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/xuchen/myGithubRepo/SFMLSample/xcode/CMakeFiles/ZERO_CHECK.dir

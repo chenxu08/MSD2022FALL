@@ -1,0 +1,18 @@
+What data is being sent to the other computer?
+08090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637
+what is the source address, the destination address?
+10.17.239.193     10.17.199.99
+Open the Data section - how do the integer values compare with the ASCII that is displayed in the terminal?
+0000   08 09 0a 0b 0c 0d 0e 0f 10 11 12 13 14 15 16 17   ................
+0010   18 19 1a 1b 1c 1d 1e 1f 20 21 22 23 24 25 26 27   ........ !"#$%&'
+0020   28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+Does it match anything that we have seen before?
+How long does it take a ping packet to travel to your classmate's machine and back? 
+5.500 ms
+Try ping google.com. How long does it take these ping packets to travel? 
+48.631 ms
+Try ping www.louvre.fr. How long does this take? 
+149.031 ms
+
+what is the purpose of the curl program?
+transfer a URL

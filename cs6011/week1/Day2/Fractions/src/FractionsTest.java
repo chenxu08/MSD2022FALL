@@ -14,7 +14,14 @@ class FractionTest {
         Fractions f1 = new Fractions(1,2 );
         Fractions f2 = new Fractions( 1, 3 );
         Fractions f3 = f1.times( f2 );
+        Fractions f4 = f1.plus(f2);
+        Fractions f5 = f2.minus(f1);
+        Fractions f6 = f1.dividedBy(f2);
 
         Assertions.assertEquals( f3.toString(), "1/6" );
+        Assertions.assertEquals( f4.toString(), "5/6" );
+        Assertions.assertEquals( f5.toString(), "-1/6" );
+        Assertions.assertEquals( f6.toString(), "3/2" );
+
     }
 }
