@@ -36,11 +36,13 @@ public class rainfall {
     double one_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 1; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
+            if (a[0].matches("January")){
             sum = sum+r;
             count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -50,11 +52,14 @@ public class rainfall {
     double two_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 2; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("February")){
+                sum = sum+r;
+                count ++;
+            }
+
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -64,11 +69,13 @@ public class rainfall {
     double three_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 3; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("March")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -78,11 +85,13 @@ public class rainfall {
     double four_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 4; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("April")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -92,11 +101,13 @@ public class rainfall {
     double five_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 5; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("May")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -106,11 +117,13 @@ public class rainfall {
     double six_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 6; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("June")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -120,11 +133,13 @@ public class rainfall {
     double seven_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 7; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("July")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -134,11 +149,13 @@ public class rainfall {
     double eight_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 8; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("August")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -148,11 +165,13 @@ public class rainfall {
     double nine_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 9; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("September")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -162,11 +181,13 @@ public class rainfall {
     double ten_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 10; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("October")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -176,11 +197,13 @@ public class rainfall {
     double eleven_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 11; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("November")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -190,11 +213,13 @@ public class rainfall {
     double twelve_average (ArrayList<String> rainfall){
         double sum =0;
         int count =0;
-        for(int i = 12; i < rainfall.size();i=i+12){
+        for(int i = 1; i < rainfall.size();i++){
             String [] a = rainfall.get(i).split("\\s+");
             double r = Double.parseDouble(a[2]);
-            sum = sum+r;
-            count ++;
+            if (a[0].matches("December")){
+                sum = sum+r;
+                count ++;
+            }
         }
         double average = sum/count;
         String str=String.format("%.2f",average);
@@ -205,7 +230,7 @@ public class rainfall {
 
 
     public static void main(String[] args) throws IOException {
-        rainfall a=new rainfall("Atlanta.txt");
+        rainfall a=new rainfall("Macon.txt");
         FileWriter myWriter = new FileWriter("rainfall_results.txt");
         ArrayList<String> b=a.makearray();
         myWriter.write(b.get(0)+"\n");
