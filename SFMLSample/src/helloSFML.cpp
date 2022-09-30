@@ -1,4 +1,7 @@
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
+//#include <SFML/Graphics.hpp/CircleShape.hpp>
 
 int main()
 {
@@ -21,11 +24,14 @@ int main()
         window.clear(sf::Color::Black);
 
 	sf::CircleShape shape(50.f);
+    sf::CircleShape square(50.f,4);
+        
 
 // set the shape color to green
 shape.setFillColor(sf::Color(100, 250, 50));
-
+        square.setFillColor(sf::Color::Black);
  window.draw(shape);
+        window.draw(square);
 	// end the current frame
         window.display();
     }
