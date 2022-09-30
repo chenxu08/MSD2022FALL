@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DF6D84C9377946EFBF47AEA6 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C7895256207740D1848D3EE1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				71271BF73E0DD4441EDB7755 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		E2D28682637B47CC809BA5F2 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 470268C1783146D8AB61F452 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				4CA96F949205E0C14D5FBC12 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				5C48170BAFAE41A4BAE781D0 /* PBXTargetDependency */,
+				39C215B72A5D416E83F5E08D /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		81168932ECC64320A77C5437 /* /Users/xuchen/myGithubRepo/game/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 67DC449C62694311901DBF57 /* /Users/xuchen/myGithubRepo/game/CMakeLists.txt */; };
+		B114700AC8114C14A505F6AE /* /Users/xuchen/myGithubRepo/game/src/game.cpp */ = {isa = PBXBuildFile; fileRef = 9C8D213412E7412484A98A80 /* /Users/xuchen/myGithubRepo/game/src/game.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		00676BB773C942E9A4E663E9 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		22151B9825A54AA7B6B90ADE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		5DD12677AAC347EEBCE03298 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		794B9E4D441C42A7A99A644F /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		56B89FB957214971807D559E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5658047C9B174E539AFCB1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0ED4DB1A6A74AF8B09BC37A;
+			remoteInfo = testgame;
+		};
+		8381EE086CDF4A1BAFE2B952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5658047C9B174E539AFCB1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6D84C9377946EFBF47AEA6;
+			remoteInfo = ZERO_CHECK;
+		};
+		CC228845D11C4D91AE6096A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5658047C9B174E539AFCB1E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6D84C9377946EFBF47AEA6;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67DC449C62694311901DBF57 /* /Users/xuchen/myGithubRepo/game/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7899E91AEECF43FF8814BF6F /* /Users/xuchen/myGithubRepo/game/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9C8D213412E7412484A98A80 /* /Users/xuchen/myGithubRepo/game/src/game.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = game.cpp; path = src/game.cpp; sourceTree = SOURCE_ROOT; };
+		C12AF2659AA94AC8A7A81C56 /* testgame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = testgame; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6BABD74C03F41B099E91A6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F3C28C978349A9A193C9BE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		0EC81BAE26314FE08B8419F3 /* testgame */ = {
+			isa = PBXGroup;
+			children = (
+				1CE8E3C1A91842D58563D516 /* Source Files */,
+				67DC449C62694311901DBF57 /* /Users/xuchen/myGithubRepo/game/CMakeLists.txt */,
+			);
+			name = testgame;
+			sourceTree = "<group>";
+		};
+		17566BAB73404E9FBD04457C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C12AF2659AA94AC8A7A81C56 /* testgame */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE8E3C1A91842D58563D516 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C8D213412E7412484A98A80 /* /Users/xuchen/myGithubRepo/game/src/game.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2DF4E92ACD5549EDB6BEBED0 = {
+			isa = PBXGroup;
+			children = (
+				0EC81BAE26314FE08B8419F3 /* testgame */,
+				68F7CD04613A447692AB1AFA /* ALL_BUILD */,
+				17566BAB73404E9FBD04457C /* Products */,
+				A745F336ABD743FDAF716304 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		68F7CD04613A447692AB1AFA /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				07F3C28C978349A9A193C9BE /* CMake Rules */,
+				7899E91AEECF43FF8814BF6F /* /Users/xuchen/myGithubRepo/game/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A745F336ABD743FDAF716304 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0ED4DB1A6A74AF8B09BC37A /* testgame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C54388588E44E5FB447FC23 /* Build configuration list for PBXNativeTarget "testgame" */;
+			buildPhases = (
+				293B65FEAEB04663BCA1DD49 /* Sources */,
+				B6BABD74C03F41B099E91A6F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B345057138BF4E5F835E8512 /* PBXTargetDependency */,
+			);
+			name = testgame;
+			productName = testgame;
+			productReference = C12AF2659AA94AC8A7A81C56 /* testgame */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5658047C9B174E539AFCB1E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1340;
+			};
+			buildConfigurationList = 36D6949016AC401EB0E719EC /* Build configuration list for PBXProject "game" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				22151B9825A54AA7B6B90ADE /* Debug */,
+				794B9E4D441C42A7A99A644F /* Release */,
+				00676BB773C942E9A4E663E9 /* MinSizeRel */,
+				5DD12677AAC347EEBCE03298 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 2DF4E92ACD5549EDB6BEBED0;
+			projectDirPath = /Users/xuchen/myGithubRepo/game;
+			projectRoot = "";
+			targets = (
+				E2D28682637B47CC809BA5F2 /* ALL_BUILD */,
+				DF6D84C9377946EFBF47AEA6 /* ZERO_CHECK */,
+				D0ED4DB1A6A74AF8B09BC37A /* testgame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4CA96F949205E0C14D5FBC12 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/xuchen/myGithubRepo/game/xcode/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		71271BF73E0DD4441EDB7755 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/xuchen/myGithubRepo/game/xcode/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  make -f /Users/xuchen/myGithubRepo/game/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  make -f /Users/xuchen/myGithubRepo/game/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  make -f /Users/xuchen/myGithubRepo/game/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/xuchen/myGithubRepo/game/xcode
+  make -f /Users/xuchen/myGithubRepo/game/xcode/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		293B65FEAEB04663BCA1DD49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B114700AC8114C14A505F6AE /* /Users/xuchen/myGithubRepo/game/src/game.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39C215B72A5D416E83F5E08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6D84C9377946EFBF47AEA6 /* ZERO_CHECK */;
+			targetProxy = CC228845D11C4D91AE6096A9 /* PBXContainerItemProxy */;
+		};
+		5C48170BAFAE41A4BAE781D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0ED4DB1A6A74AF8B09BC37A /* testgame */;
+			targetProxy = 56B89FB957214971807D559E /* PBXContainerItemProxy */;
+		};
+		B345057138BF4E5F835E8512 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6D84C9377946EFBF47AEA6 /* ZERO_CHECK */;
+			targetProxy = 8381EE086CDF4A1BAFE2B952 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		024954D5355640FDBA8C66BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		0655EAF5992D43139BAE580E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0DD5F77EB26F45AFBE065E59 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2377210C7CEA4CC4871E856C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode/build;
+			};
+			name = Debug;
+		};
+		5A45868ADF49476F854FCA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.5.1.dylib","/opt/homebrew/lib/libsfml-window.2.5.1.dylib","/opt/homebrew/lib/libsfml-system.2.5.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testgame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		74BB286112874DEA9A2BED08 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode/build;
+			};
+			name = MinSizeRel;
+		};
+		77DA6FFA7C6849DAB63F2B1D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode/build;
+			};
+			name = RelWithDebInfo;
+		};
+		7A99E55BFB304804AE9B2393 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.5.1.dylib","/opt/homebrew/lib/libsfml-window.2.5.1.dylib","/opt/homebrew/lib/libsfml-system.2.5.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testgame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7E1BED353D0C4422AA7B27A5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.5.1.dylib","/opt/homebrew/lib/libsfml-window.2.5.1.dylib","/opt/homebrew/lib/libsfml-system.2.5.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testgame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9ECF35D5A3F840F0B7BF9F1F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		ADF2BAC7F45A45E1B4949609 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B24B99E4F199446E921B32FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B4599D37BE144D0F8317354F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E4D714A11B8B484C82D0099B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.5.1.dylib","/opt/homebrew/lib/libsfml-window.2.5.1.dylib","/opt/homebrew/lib/libsfml-system.2.5.1.dylib","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = testgame;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E6192A1C53BA40AB82814379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode/build;
+			};
+			name = Release;
+		};
+		EDAA7480CCF347D787335A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/xuchen/myGithubRepo/game/xcode;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C54388588E44E5FB447FC23 /* Build configuration list for PBXNativeTarget "testgame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D714A11B8B484C82D0099B /* Debug */,
+				5A45868ADF49476F854FCA9E /* Release */,
+				7E1BED353D0C4422AA7B27A5 /* MinSizeRel */,
+				7A99E55BFB304804AE9B2393 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		36D6949016AC401EB0E719EC /* Build configuration list for PBXProject "game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2377210C7CEA4CC4871E856C /* Debug */,
+				E6192A1C53BA40AB82814379 /* Release */,
+				74BB286112874DEA9A2BED08 /* MinSizeRel */,
+				77DA6FFA7C6849DAB63F2B1D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		470268C1783146D8AB61F452 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4599D37BE144D0F8317354F /* Debug */,
+				024954D5355640FDBA8C66BA /* Release */,
+				0655EAF5992D43139BAE580E /* MinSizeRel */,
+				ADF2BAC7F45A45E1B4949609 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C7895256207740D1848D3EE1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDAA7480CCF347D787335A37 /* Debug */,
+				B24B99E4F199446E921B32FA /* Release */,
+				0DD5F77EB26F45AFBE065E59 /* MinSizeRel */,
+				9ECF35D5A3F840F0B7BF9F1F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5658047C9B174E539AFCB1E2 /* Project object */;
+}

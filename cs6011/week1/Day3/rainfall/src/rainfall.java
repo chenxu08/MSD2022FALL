@@ -10,7 +10,7 @@ public class rainfall {
         this.filename=filename;
     }
     ArrayList makearray() throws FileNotFoundException {
-        ArrayList<String> rainfall=new ArrayList<String>();
+        ArrayList<String> rainfall=new ArrayList<>();
         Scanner fileReader = new Scanner( new FileInputStream( filename ) );
 
         while (fileReader.hasNextLine()){
@@ -230,7 +230,7 @@ public class rainfall {
 
 
     public static void main(String[] args) throws IOException {
-        rainfall a=new rainfall("Macon.txt");
+        rainfall a=new rainfall("Atlanta.txt");
         FileWriter myWriter = new FileWriter("rainfall_results.txt");
         ArrayList<String> b=a.makearray();
         myWriter.write(b.get(0)+"\n");
@@ -248,14 +248,7 @@ public class rainfall {
         myWriter.write("The average rainfall amount for October is "+a.ten_average(a.makearray())+" inches.\n");
         myWriter.write("The average rainfall amount for November is "+a.eleven_average(a.makearray())+" inches.\n");
         myWriter.write("The average rainfall amount for December is "+a.twelve_average(a.makearray())+" inches.\n");
-
         myWriter.close();
-
-
-
-
-
-
     }
 
 
