@@ -5,25 +5,25 @@
 using namespace std;
 using namespace sf;
 #include "make.hpp"
-//class enemy {
-// 
-//public:
-//    CircleShape e;
-//    enemy(){
-//        CircleShape e;
-//    }
-//    enemy(const enemy& a){
-//        e=a.e;
-//    }
-//    CircleShape radius (CircleShape e){
-//        e.setRadius(50.f);
-//        e.setFillColor(Color::White);
-//        e.setOutlineThickness(2);
-//        e.setOutlineColor(Color::Blue);
-//        return e;
-//    }
-//    
-//};
+class enemy {
+
+public:
+    CircleShape e;
+    enemy(){
+        CircleShape e;
+    }
+    enemy(const enemy& a){
+        e=a.e;
+    }
+    CircleShape radius (CircleShape e){
+        e.setRadius(50.f);
+        e.setFillColor(Color::White);
+        e.setOutlineThickness(2);
+        e.setOutlineColor(Color::Blue);
+        return e;
+    }
+
+};
 int main()
 {
     // create the window
