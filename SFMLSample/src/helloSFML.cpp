@@ -25,13 +25,19 @@ int main()
 
 	sf::CircleShape shape(50.f);
     sf::CircleShape square(50.f,4);
-        
+        sf::Text text;
+        text.setString("Hello world");
+        text.setCharacterSize(100);
+        text.setFillColor(sf::Color::Red);
+
+
 
 // set the shape color to green
 shape.setFillColor(sf::Color(100, 250, 50));
         square.setFillColor(sf::Color::Black);
  window.draw(shape);
         window.draw(square);
+        window.draw(text);
 	// end the current frame
         window.display();
     }
