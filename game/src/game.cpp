@@ -5,39 +5,39 @@
 using namespace std;
 using namespace sf;
 #include "make.hpp"
-class enemy {
-
-public:
-    CircleShape e;
-    enemy(){
-        CircleShape e;
-    }
-    enemy(const enemy& a){
-        e=a.e;
-    }
-    CircleShape radius (CircleShape e){
-        e.setRadius(50.f);
-        e.setFillColor(Color::White);
-        e.setOutlineThickness(2);
-        e.setOutlineColor(Color::Blue);
-        return e;
-    }
-
-};
+//class enemy {
+//
+//public:
+//    CircleShape e;
+//    enemy(){
+//        CircleShape e;
+//    }
+//    enemy(const enemy& a){
+//        e=a.e;
+//    }
+//    CircleShape radius (CircleShape e){
+//        e.setRadius(50.f);
+//        e.setFillColor(Color::White);
+//        e.setOutlineThickness(2);
+//        e.setOutlineColor(Color::Blue);
+//        return e;
+//    }
+//
+//};
 int main()
 {
     // create the window
     sf::RenderWindow window(sf::VideoMode(1080, 1080), "My window");
     
-    enemy hoop;
-    hoop.radius(hoop.e);
-//    CircleShape hoop;
+//    enemy hoop;
+////    hoop.radius(hoop.e);
+    CircleShape hoop;
         int direction = 0;
-//        hoop.setRadius(50.f);
-//        hoop.setFillColor(Color::White);
-//        hoop.setOutlineThickness(2);
-//        hoop.setOutlineColor(Color::Blue);
-        hoop.e.setPosition(Vector2f(window.getSize().y - 2 * hoop.e.getRadius(), 10.f));
+        hoop.setRadius(50.f);
+        hoop.setFillColor(Color::White);
+        hoop.setOutlineThickness(2);
+        hoop.setOutlineColor(Color::Blue);
+        hoop.setPosition(Vector2f(window.getSize().y - 2 * hoop.getRadius(), 10.f));
     CircleShape a;
         a.setRadius(50.f);
         a.setFillColor(Color::Red);
@@ -63,18 +63,18 @@ int main()
             if (event.type == sf::Event::Closed||hp==0)
                 window.close();
         }
-        if (hoop.e.getPosition().y <= 0){
+        if (hoop.getPosition().y <= 0){
             direction = 1;}
-        else if (hoop.e.getPosition().y + 2 * hoop.e.getRadius() >= window.getSize().y){
+        else if (hoop.getPosition().y + 2 * hoop.getRadius() >= window.getSize().y){
                     direction = 0;
 
         }
                 if (true&&(hp!=0))
                 {
                     if (direction == 0)
-                    {hoop.e.move(0, -0.1);}
+                    {hoop.move(0, -0.1);}
                     else
-                    {hoop.e.move(0, 0.1);}
+                    {hoop.move(0, 0.1);}
                 }
         a.setPosition(a.getPosition().x, Mouse::getPosition(window).y);
         if(event.KeyPressed && event.key.code == Keyboard::Space){
@@ -87,7 +87,7 @@ int main()
                 b.move(0.2,0);
             }
         }
-        if(b.getGlobalBounds().intersects(hoop.e.getGlobalBounds())){
+        if(b.getGlobalBounds().intersects(hoop.getGlobalBounds())){
             hp--;
         }
         if (true){
@@ -99,7 +99,7 @@ int main()
 
        
        
- window.draw(hoop.e);
+ window.draw(hoop);
  window.draw(b);
  window.draw(a);
  
