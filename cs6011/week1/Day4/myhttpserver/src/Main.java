@@ -23,7 +23,7 @@ public class Main {
 
 
             PrintWriter pw = new PrintWriter(os);
-            if (name == "index.html"){
+            if (name.matches("index.html")){
                 InputStream i = new FileInputStream("/Users/xuchen/myGithubRepo/cs6011/week1/Day4/myhttpserver/src/index.html");
             BufferedReader fr =new BufferedReader(new InputStreamReader(i));
             pw.println("HTTP/1.1 200 OK");
@@ -35,15 +35,17 @@ public class Main {
                 pw.print(c);
             }
             pw.flush();
-            pw.close();
             fr.close();
-            SocketToClient.close();}
+            }
             else{
                 pw.println("HTTP/1.1 404 File Not Found");
                 pw.println("Content-Type: text/html;charset=utf-8");
                 pw.println("");
                 pw.flush();
             }
+            pw.close();
+
+            SocketToClient.close();
 
 
         }

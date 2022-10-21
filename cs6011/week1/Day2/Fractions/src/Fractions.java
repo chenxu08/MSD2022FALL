@@ -81,14 +81,23 @@ public class Fractions {
 
     }
     public static void main(String[] args) {
-        Fractions a = new Fractions(-1,-3);
-        Fractions b = new Fractions(2,3);
-        Fractions c=a.minus(b);
+//        Fractions a = new Fractions(-1,-3);
+//        Fractions b = new Fractions(2,3);
+//        Fractions c=a.minus(b);
+        try {
+            long a =10;
+            long b = 0;
+            Fractions d = new Fractions(a,b);
+            long c=a/b;
+            System.out.println(d.toString());
+        }catch(ArithmeticException e){
+            System.out.println("Exception thrown :"+e);
+        }
 
 
-        System.out.println(a.numerator);
-        System.out.println(a.denominator);
-        System.out.println(a.toString());
-        System.out.println(c.toString());
+//        System.out.println(a.numerator);
+//        System.out.println(a.denominator);
+//        System.out.println(a.toString());
+//        System.out.println(c.toString());
     }
 }
