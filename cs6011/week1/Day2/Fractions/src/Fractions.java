@@ -1,5 +1,8 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
-public class Fractions {
+public class Fractions implements Comparable{
     private long numerator;
     private long denominator;
     private long GCD(){
@@ -20,11 +23,6 @@ public class Fractions {
             numerator=-numerator;
             denominator=-denominator;
         }
-    }
-
-    public Fractions(){
-        numerator =0;
-        denominator =1;
     }
     public Fractions(long numerator,long denominator){
         if (denominator<0){
@@ -71,33 +69,53 @@ public class Fractions {
         return dividedBy;
     }
     public Double toDouble(){
-        double result = numerator / denominator;
-        return result;
+        double n = numerator;
+        double d = denominator;
+        return n / d;
     }
-    public String toString() {
-        String s=numerator+"/"+denominator;
-        return s;
 
-
+    public String toString(){
+        return numerator+"/"+denominator;
     }
+    public int r(){
+        int r = (int) (numerator);
+        return r;
+    }
+    @Override
+    public int compareTo(Object o) {
+        Fractions f = (Fractions)(o);
+        return this.r()-f.r();
+    }
+
     public static void main(String[] args) {
-//        Fractions a = new Fractions(-1,-3);
-//        Fractions b = new Fractions(2,3);
-//        Fractions c=a.minus(b);
-        try {
-            long a =10;
-            long b = 0;
-            Fractions d = new Fractions(a,b);
-            long c=a/b;
-            System.out.println(d.toString());
-        }catch(ArithmeticException e){
-            System.out.println("Exception thrown :"+e);
-        }
+        Fractions a = new Fractions(-1,-3);
+        Fractions b = new Fractions(2,3);
+        Fractions c=a.minus(b);
+//        try {
+//            long a =10;
+//            long b = 0;
+//            Fractions d = new Fractions(a,b);
+//            long c=a/b;
+//            System.out.println(d.toString());
+//        }catch(ArithmeticException e){
+////            System.out.println("Exception thrown :"+e);
+//            e.printStackTrace();
+//        }
 
 
-//        System.out.println(a.numerator);
-//        System.out.println(a.denominator);
-//        System.out.println(a.toString());
-//        System.out.println(c.toString());
+        System.out.println(a);
+        System.out.println(a.denominator);
+        System.out.println(a.toDouble());
+        System.out.println(c.toString());
+        ArrayList arr = new ArrayList();
+        arr.add(a);
+        arr.add(b);
+        arr.add(c);
+        System.out.println(arr);
+        Collections.sort(arr);
+        System.out.println(arr);
+
     }
+
+
 }
