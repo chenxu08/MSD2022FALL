@@ -38,6 +38,7 @@ function handkp(event){
         request.addEventListener("error",handleAjaxErrorCB);
         request.addEventListener("load",handleAjaxSuccessCB);
         request.send();
+
         if(wsOpen){
         ws.send(x+" "+y);}else{
             wsresultTA.value="ws is not open";

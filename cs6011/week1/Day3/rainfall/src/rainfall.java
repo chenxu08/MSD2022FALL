@@ -230,7 +230,7 @@ public class rainfall {
 
 
     public static void main(String[] args) throws IOException {
-        rainfall a=new rainfall("Atlanta.txt");
+        rainfall a=new rainfall("Macon.txt");
         FileWriter myWriter = new FileWriter("rainfall_results.txt");
         ArrayList<String> b=a.makearray();
         myWriter.write(b.get(0)+"\n");

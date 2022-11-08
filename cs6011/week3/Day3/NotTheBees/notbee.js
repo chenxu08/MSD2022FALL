@@ -15,17 +15,20 @@ for (let i= 0; i<bees.length;i++){
 
 let myImg = new Image();
 myImg.src="honey.png";
-let xPos = 0;
-let yPos = 50;
+let xPos = Math.random()*1000;
+let yPos = Math.random()*500;
+let xPos2 = Math.random()*1000;
+let yPos2= Math.random()*500;
 function main(){
 
 
 
     // ctx.drawImage(myImg,20,20, 50,50);
-    // window.requestAnimationFrame(animate);
+    // window.requestAnimationFrame(handlemouse);
+    // document.onmousemove = handlemouse;
 
-    // while (myImg.x>=550||myImg.x<=500||myImg.y<=200||myImg.y>=250) {
-        animate();
+
+        // animate();
 
 
 
@@ -33,13 +36,26 @@ function main(){
 window.onload = main;
 
 
-function animate(){
-    erase();
-    ctx.drawImage(myImg,xPos,yPos, 50,50);
-    for (let i= 0; i<bees.length-1;i++){
-        ctx.drawImage(bees[i],xPos+(i+1)*50,yPos+(i+1)*50, 50,50,);
-    }
-}
+// function animate(){
+//     erase();
+//
+//     ctx.drawImage(bees[1],xPos,yPos, 50,50,);
+//     xPos+=5;
+//     ctx.drawImage(bees[0],xPos2,yPos2, 50,50,);
+//     xPos2+=0.5;
+//     // for (let i= 0; i<bees.length;i++){
+//     //     erase();
+//     //     let xps = i*50;
+//     //     let yps = i*50;
+//     //     ctx.drawImage(bees[i],xps,yps, 30,30);
+//     //     xps+=5;
+//     //     // window.requestAnimationFrame(animate);
+//     // }
+//
+//
+//     window.requestAnimationFrame(animate);
+
+// }
 function erase(){
     ctx.fillStyle="lightblue";
     ctx.fillRect(0,0,cWidth,cHeight);
@@ -47,8 +63,12 @@ function erase(){
 function handlemouse(e){
     erase();
     ctx.drawImage(myImg,e.x,e.y, 50,50,);
-    for (let i= 0; i<bees.length-1;i++){
-        ctx.drawImage(bees[i],e.x+(i+1)*50,e.y+(i+1)*50, 50,50,);
-    }
+    console.log("1");
+    // ctx.drawImage(bees[1],xPos,yPos, 50,50,);
+    // xPos+=5;
+    // ctx.drawImage(bees[0],xPos2,yPos2, 50,50,);
+    // xPos2+=0.5;
+    // window.requestAnimationFrame(handlemouse);
 }
 document.onmousemove = handlemouse;
+// myImg.addEventListener("mousemove",handlemouse);
