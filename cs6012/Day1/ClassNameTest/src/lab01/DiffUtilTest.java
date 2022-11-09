@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DiffUtilTest {
-    private int[] arr1, arr2, arr3;
+     private int[]arr1, arr2, arr3;
 
     @BeforeEach
     void setUp() {
